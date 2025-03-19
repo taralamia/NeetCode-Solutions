@@ -1,0 +1,29 @@
+1. Basic Syntax:
+vector<int> nums = {1, 2, 3, 4, 5};
+for (int num : nums) {
+    cout << num << " ";
+}
+// Output: 1 2 3 4 5
+
+2. Using Reference(&): To avoid unnecessary copying, use a reference (&)
+vector<string> st1 = {"book","rook","look"};
+for(string& word: st1)
+{
+  word = "fruit"
+}
+#All the elements of st1 will be changed to "fruit"
+-> if we don't want to modify any element then 
+
+for(const string& word: st1)
+{
+  cout<<word<<endl;
+}
+
+3. Key-Value Pairs: For pair elements, we use const auto&
+
+map<string,int> map1={{"oppo",2},{"poppo",3},{"choppo",4}}
+for(const auto& pair: map1)
+{
+  cout <<pair.first<<" "<<pair.second<<endl;
+}
+#when modification is not needed then we can use const reference
