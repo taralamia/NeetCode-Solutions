@@ -1,0 +1,15 @@
+// for counting character in string
+unordered_map<char,int> map1;
+string s ="jam";
+for(const char& i: s)
+{
+   map1[i]++;
+}
+// for counting words in a vector of string
+unordered_map<string,int> map1;
+vector<string> st1;
+for(const string& word: s)
+{
+   map1[word]++;
+}
+
