@@ -1,6 +1,6 @@
 1. Basic Syntax:
 vector<int> nums = {1, 2, 3, 4, 5};
-for (int num : nums) {
+for (auto num : nums) {
     cout << num << " ";
 }
 // Output: 1 2 3 4 5
@@ -27,3 +27,6 @@ for(const auto& pair: map1)
   cout <<pair.first<<" "<<pair.second<<endl;
 }
 #when modification is not needed then we can use const reference
+
+
+
