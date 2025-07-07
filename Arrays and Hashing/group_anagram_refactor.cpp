@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    vector<string> strs= {"bdddddddddd", "bbbbbbbbbbc"};
+    vector<string> strs= {"act","pots","cat","tops","stop","hat"};
     unordered_map<string,vector<string>> groups;
 
     for (const string& s : strs)
@@ -27,14 +27,16 @@ int main()
     {
         res.push_back(entry.second);
     }
-    for (const auto& group : res) {
-    cout << "[ ";
-    for (const string& s : group) {
-        cout << "\"" << s << "\" ";
-    }
-    cout << "]\n";
-}
+    for(int i=0; i<res.size(); i++)
+    {
+        cout<<"Group: "<<i<<": ";
+        for (const string& word : res[i])
+        {
+            cout << word << " ";
+        }
+        cout<<endl;
 
+    }
 
 
 }
