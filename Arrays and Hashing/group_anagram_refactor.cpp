@@ -17,7 +17,7 @@ int main()
         string key;
         for(int i=0; i<26; i++)
         {
-            //key +="#";
+            key +="#";
             key += to_string(vec[i]);
         }
         groups[key].push_back(s);
